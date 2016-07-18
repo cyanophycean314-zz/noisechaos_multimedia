@@ -112,7 +112,7 @@ for fileno in range(len(filelist)):
 
 		#plt.title(str(filename) + ", bin width = " + str(pbinw) + ", points = " + str(np.sum(psec)))
 		plt.subplot(121)
-		plt.title('Photons per time delay = ' + str(filename), size = 20)
+		plt.title('Photons per second = {:,}'.format(filename*500), size = 20)
 		#plt.ylim([0,num])
 		#plt.xlim([0,num])
 		plt.xlabel('Voltage one time delay ago, V(t - w)', size = 20)
